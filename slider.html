@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slider</title>
+        <meta charset="uft 8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            @keyframes animacja{
+                0%{left: 0%;}
+                20%{left: -100%;}
+                25%{left: -100%;}
+                45%{left: -200%;}
+                50%{left: -200%;}
+                70%{left: -300%;}
+                75%{left: -300%;}
+                95%{left: -400%;}
+                100%{left: -400%;}
+            }
+            #slider{
+                width: 100%;
+                height: 500px;
+                overflow: hidden;
+            }
+            #slider figure img{
+                float: left;
+                width: 20%;
+            }
+            #slider figure{
+                position: relative;
+                width: 500%;
+                margin: 0;
+                left: 0;
+                animation: 5s animacja
+                infinite alternate;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="slider">
+            <figure>
+                <img src="./img/obraz_1.jpg">
+                <img src="./img/obraz_2.jpg">
+                <img src="./img/obraz_3.jpg">
+                <img src="./img/obraz_4.jpg">
+                <img src="./img/obraz_5.jpg">
+            </figure>
+        </div>
+    </body>
+</html>

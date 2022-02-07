@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    
+}
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+body{
+    background: linear-gradient( 25deg, black, #00008b, black);
+}
+.container{
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+/*MENU*/
+nav{
+    width: 100%;
+    line-height: 80px;
+    margin: auto;
+    background-color: #303945;
+    color: #E7EFF3;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: 1;
+}
+nav ul,li{
+    list-style-type: none ;
+    display: inline;
+    color: #D4E1FF;
+    text-shadow: #000000 3px 3px 3px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 110%;
+}
+nav a{
+    color: #D4E1FF;
+    text-decoration: none;
+}   
+nav a:hover{
+    color: red;
+}
+/*NGŁÓWEK*/
+header{
+    height: 100vh;
+    background-image: url(../img/main.jpg);
+    background: cover;
+    background-position: center;
+}
+header p{
+    font-size: 50px;
+    text-align: center;
+    color: beige;
+    margin-top: 30px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding-top: 100px;
+    text-shadow: 3px 3px 3px gray;
+}
+blockquote {
+    font-size: 13px;
+    position: relative;
+    color: #46494f;
+    line-height: 1.54em;
+    font-style: italic;
+    padding: 0 70px;
+    text-align: justify;
+}
+
+blockquote::before {
+    font-family: Georgia, serif;
+    content: '„';
+    font-size: 100px;
+    color: #196abc;
+    position: absolute;
+    left: 27vw;
+    bottom: 20px;
+}
+
+blockquote::after {
+    font-family: Georgia, serif;
+    content: '”';
+    font-size: 100px;
+    color: #196abc;
+    position: absolute;
+    right: 27vw;
+    top: 100px;
+}
+.middle{
+    background-color: none;
+    color: beige;
+}
+.middle p{
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+.middle h1{
+    padding: 10px;
+    color:#D4E1FF;
+    font-family: 'Twinkle Star', cursive;
+}
+.sekcja1, .sekcja2, .sekcja3{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+footer{
+    height: 80px;
+    background-color: darkblue;
+    text-align: center;
+    line-height: 80px;
+    padding-top: 10px ;
+}
+footer img{
+    height: 40px;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+#parallax1{
+    height:80vh;
+    width:100%;
+    background-image:url("../img/obraz_2.jpg");
+    background-size:cover;display:table;
+    background-attachment:fixed;
+}
+#parallax2{
+    height:80vh;
+    width:100%;
+    background-image:url("../img/obraz_3.jpg");
+    background-size:cover;display:table;
+    background-attachment:fixed;
+}
+#parallax3{
+    height:100vh;
+    width:100%;
+    background-image:url("../img/obraz_4.jpg");
+    background-size:cover;display:table;
+    background-attachment:fixed;
+    text-align: center;
+}
+#slider{
+    width: 1536px;
+    height: auto;
+}
+#tlumaczenie{
+    font-size: 40px;
+    text-align: center;
+    color: beige;
+    margin-top: 30px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding-top: 100px;
+    text-shadow: 3px 3px 3px gray;
+}
+#flim{
+    text-align: center;
+    line-height: 100px;
+    padding-top: 100px;
+ }
+#flimdol{
+    position: fixed;
+}
+/*responsywność*/
+@media (max-width: 1700px){
+    blockquote {
+        font-size: 13px;
+        position: relative;
+        color: #46494f;
+        line-height: 1.54em;
+        font-style: italic;
+        padding: 0 70px;
+        text-align: justify;
+    }
+    
+    blockquote::before {
+        font-family: Georgia, serif;
+        content: '„';
+        font-size: 80px;
+        color: #196abc;
+        position: absolute;
+        left: 27vw;
+        bottom: 20px;
+    }
+    
+    blockquote::after {
+        font-family: Georgia, serif;
+        content: '”';
+        font-size: 80px;
+        color: #196abc;
+        position: absolute;
+        right: 27vw;
+        top: 100px;
+    }
+    header p{
+        font-size: 40px;
+        text-align: center;
+        color: beige;
+        margin-top: 30px;
+        margin: auto;
+        color: #fff;
+        text-align: center;
+        margin: 0;
+        padding-top: 100px;
+        text-shadow: 3px 3px 3px gray;
+    }
+    #tlumaczenie{
+        font-size: 30px;
+    }
+    .slider img {
+        width: 1360px;
+        height: auto;
+        display: inline;
+    }
+}
+@media (max-width: 1250px){
+    blockquote::before {
+        left: 25vw;
+    }
+    
+    blockquote::after {
+        right: 25vw;
+    }
+}
+@media (max-width: 1150px){
+    blockquote::before {
+        left: 22vw;
+    }
+    
+    blockquote::after {
+        right: 22vw;
+    }
+}
+@media (max-width: 1440px){
+    header{
+        height: 70vh;
+    }
+    .slider img {
+        width: 1152px;
+        height: 600px;
+    }
+    #parallax1{
+        background-image:url("../img/obraz_2_tablet.jpg");
+    }
+}
+@media (max-width: 1024px){
+    .slider img {
+        width: 819px;
+        height: auto;
+    }
+    #parallax1{
+        background-image:url("../img/obraz_2_tablet.jpg");
+    }
+    #parallax2{
+        width: 80vw;
+        height: 60vh;
+        background-image:url("../img/obraz_3_tablet.jpg");
+    }
+    #parallax3{
+        width: 80vw;
+        height: 40vh;
+        background-image:url("../img/obraz_4_tablet.jpg");
+    }
+    nav ul,li{
+        font-size: 100%;}
+    blockquote {
+        font-size: 13px;
+        position: relative;
+        color: #46494f;
+        line-height: 1.54em;
+        font-style: italic;
+        padding: 0 70px;
+        text-align: justify;
+    }
+    
+    blockquote::before {
+        font-family: Georgia, serif;
+        content: '„';
+        font-size: 60px;
+        color: #196abc;
+        position: absolute;
+        left: 27vw;
+        bottom: 20px;
+    }
+    
+    blockquote::after {
+        font-family: Georgia, serif;
+        content: '”';
+        font-size: 60px;
+        color: #196abc;
+        position: absolute;
+        right: 27vw;
+        top: 100px;
+    }
+    header p{
+        font-size: 28px;}
+    #tlumaczenie{
+        font-size: 18px;
+    }
+    header{
+        height: 430px;
+        background-image: url(../img/main_tablet.jpg);}
+}
+@media (max-width: 768px){
+    .slider img {
+        width: 614px;
+        height: auto;
+    }
+    blockquote::before {
+        font-family: Georgia, serif;
+        content: '„';
+        font-size: 60px;
+        color: #196abc;
+        position: absolute;
+        left: 22vw;
+        bottom: 20px;
+    }
+    
+    blockquote::after {
+        font-family: Georgia, serif;
+        content: '”';
+        font-size: 60px;
+        color: #196abc;
+        position: absolute;
+        right: 22vw;
+        top: 100px;
+    }
+    nav ul,li{
+        font-size: 90%;}
+    header{
+        height: 430px;
+        background-image: url(../img/main_tablet.jpg);}
+}

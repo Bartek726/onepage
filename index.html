@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Misje Apollo</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/favicon.png">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            @keyframes animacja{
+                0%{left: 0%;}
+                10%{left: -100%;}
+                16%{left: -100%;}
+                26%{left: -200%;}
+                32%{left: -200%;}
+                42%{left: -300%;}
+                48%{left: -300%;}
+                58%{left: -400%;}
+                64%{left: -400%;}
+                74%{left: -500%;}
+                100%{left: -500%;}
+            }
+            #slider{
+                width: 100%;
+                height: 850px;
+                overflow: hidden;
+            }
+            #slider figure img{
+                float: left;
+                width: 100%/7;
+            }
+            #slider figure{
+                position: relative;
+                width: 700%;
+                margin: 0;
+                left: 0;
+                animation: 20s animacja
+                infinite alternate;
+            }
+            @media (max-width: 1440px){
+                #slider{
+                width: 100%;
+                height: 650px;
+                }
+            }
+            @media (max-width: 1440px){
+                #slider{
+                width: 100%;
+                height: 600px;
+                }
+            }
+            @media (max-width: 768px){
+                #slider{
+                width: 100%;
+                height: 400px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main class="container" id="index">
+            <nav>
+                <ul>
+                    <li><a href="#index">HOME</a></li>
+                    <li><a href="#apollo">Program Apollo</a></li>
+                    <li><a href="#czlowiek">Człowiek na księżycu</a></li>
+                    <li><a href="#apollo13">Pechowa 13</a></li>
+                    <li><a href="#golf">Golf</a></li>
+                </ul>
+            </nav>
+            <header>
+                <blockquote>
+                    <p>Per aspera ad astra</p><br>
+                </blockquote>
+                <p id="tlumaczenie">Przez trudy do gwiazd...</p>
+            </header>
+            <main class="middle">
+                <section class="sekcja1" id="apollo">
+                    <h1>Program Apollo</h1>
+                    <p>Program Apollo – seria amerykańskich lotów kosmicznych przygotowywanych od roku 1961 i zrealizowanych w latach 1966–1972. Celem programu było lądowanie człowieka na Księżycu, a następnie jego bezpieczny powrót na Ziemię. Zadanie zostało zrealizowane w 1969 roku, w czasie misji Apollo 11. Program był kontynuowany do roku 1972 w celu przeprowadzenia dokładniejszej naukowej eksploracji Księżyca. Program objął 18 lotów, w tym 12 załogowych. Z 18 lotów tylko 6 wylądowało na srebrnym globie.</p>
+                </section>
+                <div id="parallax1"></div>
+                <section class="sekcja2" id="czlowiek">
+                    <h1>Człowiek na księżycu</h1>
+                    <p>Na księżycu łącznie było 12 osób: 
+                        <ol>
+                            <li>Apollo 11 - Neil Armstrong, Buzz Aldrin</li><br>
+                            <li>Apollo 12 - Charles Conrad, Alan Bean</li><br>
+                            <li>Apollo 14 - Alan B. Shepard, Edgar D. Mitchell</li><br>
+                            <li>Apollo 15 - David R. Scott, James B. Irwin</li><br>
+                            <li>Apollo 16 - John Young, Charles Duke</li><br>
+                            <li>Apollo 17 - Eugene Cernan, Harrison Schmitt</li><br>
+                        </ol>
+                    </p>
+                </section>
+                <div id="slider">
+                    <figure class="slider">
+                        <img src="./img/slider_1920px/Apollo_11_Crew.jpeg">
+                        <img src="./img/slider_1920px/Apollo_12_crew.jpeg">
+                        <img src="./img/slider_1920px/Apollo_14_crew.jpeg">
+                        <img src="./img/slider_1920px/Apollo_15_Crew.jpeg">
+                        <img src="./img/slider_1920px/Apollo_16_crew.jpeg">
+                        <img src="./img/slider_1920px/Apollo_17_Crew.jpeg">
+                    </figure>
+                </div>
+                <section class="sekcja3" id="apollo13">
+                    <h1>Misja Apollo 13</h1>
+                    <p>Na trajektorii do Księżyca, w odległości 320 000 km od Ziemi, Kontrola Misji poprosiła załogę o włączenie mieszacza w zbiornikach ciekłego tlenu i płynnego wodoru. Operacja ta była potrzebna do wyrównania gęstości ich zawartości, co z kolei było konieczne do dokładnego odczytu ich stanu ilościowego. Po włączeniu silnika mieszacza astronauci usłyszeli głośny huk z towarzyszeniem wahania mocy elektrycznej i szumem pracy silników RCS, które zareagowały na zmianę położenia CSM w przestrzeni. Załoga początkowo myślała, że to meteoroid uderzył w moduł księżycowy, który w tej fazie trajektorii był połączony z modułem dowodzenia włazami dokowania. W rzeczywistości uszkodzona izolacja na kablu doprowadzającym zasilanie do mieszacza płynnego tlenu wewnątrz zbiornika przyczyniła się do spowodowania zwarcia i zapłonu izolacji. W rezultacie wzrostu temperatury wzrosło ciśnienie w zbiorniku poza jego dopuszczalny limit i eksplodował zbiornik tlenu nr 2, jeden spośród dwóch w module serwisowym. Zbiornik tlenu nr 1 nie został uszkodzony wybuchem, jednak ze zbiornikiem nr 2 łączyły go liczne przewody. Eksplozja rozerwała rurki i zawartość zbiornika wyciekła w przestrzeń kosmiczną. Równocześnie wstrząs zatrzasnął zawory zasilające części silniczków korekcyjnych i całkowicie je unieruchomił. W czasie kiedy statek kołysał się w wyniku wybuchu jak i wycieku tlenu, autopilot włączył silniki korekcyjne, by ustabilizować statek. Ponieważ działały tylko niektóre dysze, zadanie było niewykonalne. Gdy Lovell przeszedł na ręczne sterowanie, również nie ustabilizował statku. Po dwóch godzinach statek bezwładnie dryfował w przestrzeni kosmicznej. Z wnęki nr 4 została odrzucona pokrywa. Zapasy tlenu z modułu serwisowego ulotniły się w przestrzeń kosmiczną. Eksplozja miała miejsce 25 godzin po wprowadzeniu Apollo 13 na trajektorię hybrydową. Statek znajdował się w połowie drogi do Księżyca. Nie można go było po prostu zawrócić. Należało jak najszybciej ponownie wprowadzić Apollo 13 na trajektorię swobodnego powrotu.</p>
+                </section>
+                <div id="parallax2"></div>
+                <section class="sekcja4" id="golf">
+                    <h1>Golf na księżycu</h1>
+                    <p>Podczas misji apollo 14 Alan Shepard zagrał w golfa. Eksperyment z piłeczkami nie był na żadnej liście eksperymentów do przeprowadzenia w trakcie misji. Shepard uzgodnił to z Deke'em Slaytonem. Zgodnie z tą umową miał pozwolenie na zagranie w golfa, pod warunkiem że lądowanie odbędzie się bez zakłóceń. Astronauta zamontował główkę od swojego kija golfowego do instrumentu służącego do nabierania księżycowego gruntu. Gra w golfa, pierwsza w przestrzeni kosmicznej, została przeprowadzona w celu zbadania odległości, na jaką powędruje piłeczka w sześciokrotnie słabszym polu grawitacyjnym. Pierwsze uderzenie było nieudane. Po drugim strzale piłeczka, zgodnie z określeniem Sheparda, szybowała kilometrami. Wbrew legendzie, głoszącej, że piłka zniknęła za horyzontem, długość lotu wyniosła zaledwie około 15 metrów. Gdzieś w zakamarkach kraterów zostały dwie piłeczki, pierwsze użyte w kosmosie.</p>
+                </section>
+                <div id="parallax3">
+                    <div class="filmdol">                    
+                        <br><br><br><br><br><br><video preload="metadata" class="film" width="352" height="240" controls>
+                            <source src="vid/golf.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <a href="https://www.facebook.com/NASA" target="_blank" onmouseover="o1.src='./icons/fb1.svg'" onmouseout="o1.src='./icons/fb2.svg'">
+                    <img src="./icons/fb2.svg" name="o1">
+                </a>
+                <a href="https://www.instagram.com/nasa/" target="_blank" onmouseover="o2.src='./icons/tw2.svg'" onmouseout="o2.src='./icons/tw1.svg'">
+                    <img src="./icons/tw1.svg" name="o2">
+                </a>
+                <a href="https://www.youtube.com/c/NASA" target="_blank" onmouseover="o3.src='./icons/yt2.svg'" onmouseout="o3.src='./icons/yt1.svg'">
+                    <img src="./icons/yt1.svg" name="o3">
+                </a>
+            </footer>
+        </main>
+    </body>
+</html>
